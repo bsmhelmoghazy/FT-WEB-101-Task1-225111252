@@ -1,0 +1,115 @@
+/* Apply to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #222222;
+    --card-color: #f2f2f2;
+    --main-color: #8e6ccf;
+}
+
+/* Page style */
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.page-header {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--card-color);
+}
+
+.bar-links {
+    display: flex;
+    gap: 20px;
+}
+
+    .bar-links a {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+/* Profile image */
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 30px auto;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--card-color);
+    padding: 25px;
+    flex: 1;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+.form-section {
+    padding: 30px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+    .field label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .field input {
+        width: 100%;
+        padding: 10px;
+    }
+
+/* Button */
+.theme-button {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.page-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--card-color);
+}
+
+/* Dark Mode */
+body.dark {
+    --bg-color: #222222;
+    --text-color: #ffffff;
+    --card-color: #383838;
+}
